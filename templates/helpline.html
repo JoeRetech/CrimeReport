@@ -1,0 +1,96 @@
+{% include 'base.html' %}  
+  {% load static %} 
+
+{% comment %} {% block title %}Help{% endblock title %} {% endcomment %}
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpline</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{%  static  'css/helpline.css'  %}">
+</head>
+{% block body %}
+
+<body>
+{% csrf_token %}
+
+    <div class="helpline">
+        <table><h1><a name="helpline"></a>Helpline</h1>
+          <tr><th>Name of office</th>
+          <th>Telephone number</th>
+          <th>Fax number</th>
+          <th>Extension number</th></tr>
+          <tr>
+            <td> U.S. House of Representatives</td>
+            <td>(202) 225-0911</td>	
+            <td>---</td>
+            <td>---</td>
+          </tr>
+          <tr>
+            <td>Office of Inspector General </td>
+            <td>1-866-906-2446</td>	
+            <td>---</td>	
+            <td>---</td>
+          </tr>
+          <tr>
+            <td>Emergency</td>
+           <td>911</td>
+           <td>---</td>
+            <td>---</td>
+          </tr>
+          <tr>
+          <td>Sex Crimes Report Line:</td>
+          <td>212-267-7273</td>		
+          <td>---</td>
+          <td>---</td>
+          </tr>
+          <tr>
+           <td> Crime Stoppers</td>
+           <td>800-577-TIPS</td>
+          <td>---</td>	
+          <td>---</td>
+          </tr>
+          <tr>
+           <td>Missing Persons Case Status</td> 
+           <td> 212-694-7781</td>
+           <td>---</td>
+           <td>---</td>	
+          </tr>
+          <tr>
+            <td> U.S. Senate </td>
+            <td> (202) 224-0911</td>
+            <td>---</td>
+            <td>---</td>
+          </tr>
+          <tr>
+           <td>Office of Human Resource</td> 
+           <td>(202) 593-3370</td>	
+           <td>(202) 593-3663</td>
+           <td>---</td>	
+          </tr>
+        </table>
+      </div>
+      </div>
+       <div class="demo-wrap">
+  <img
+    class="demo-bg"
+    src="static/2.png"
+    alt="">
+  
+</div>
+      {% comment %} <br>
+<footer class='text-center text-light bg-dark'>
+      All rights reserved.©
+    </footer> {% endcomment %}
+</body>
+
+{% endblock body %}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}{% endblock title %} | main page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/mystyle.css">
+</head>
+
+    <div class="nav">
+    <div class="logo">
+
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Emblem_of_the_United_States_Capitol_Police.svg/1200px-Emblem_of_the_United_States_Capitol_Police.svg.png" alt="">
+
+    </div>
+   <a href="/login"  style="color: #323E61;text-decoration: none;"><button >Login</button>
+   <a href="/signup"  style="color: #323E61;text-decoration: none;">
+    <button >Sign up</button>
+    <li><a href="/admin" title="Admin" style="color: #323E61;text-decoration: none;">Admin</a></li>
+    <li><a href="/aboutus" title="about us" style="color: #323E61;text-decoration: none;">About Us</a></li>
+    <li><a href="/helpline" title="Helpline" style="color: #323E61;text-decoration: none;">Helpline</a></li>
+    <li><a href="/" title="home" style="color: #323E61;text-decoration: none;">Home</a></li> 
+    <div class="heading"><i><li> ONLINE CRIME REPORTING <br> SYSTEM</li></div></i>
+
+
+{% block body %} 
+{% endblock body %}
+   
+ 
+</html>

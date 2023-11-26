@@ -1,0 +1,74 @@
+{% include 'base.html' %}  
+{% load static %} 
+<html lang="en">
+<head>
+ <!-- {% block title %}Report{% endblock title %} -->
+<link rel="stylesheet" href="{%  static  'complaint.css'  %}">
+</head>
+
+{% block body %}
+<div class="login-box">
+    <form id="locform" method="post"  action="/complaint"enctype="multipart/form-data">
+         {% csrf_token %}
+         <div class="demo-wrap">
+  <img
+    class="demo-bg"
+    src="static/2.png"
+    alt=""
+  >
+  
+</div>
+            <h3 style="color:#323E61">Report Complaint</h3>
+           
+            <div style="font-size: 90%; color:#323E61">
+
+
+                <p><strong>Name of victim(s)</strong>:
+                    <br />
+                    <input id="name" placeholder="Name " name="name" style=" font-size: 90%;" type="text" required>
+                </p>
+
+               
+                <p><strong>Place of the incident</strong>:
+                    <br />
+                    <input name="place" style=" font-size: 90%;" type="text" placeholder="Enter address" required>
+                </p> 
+
+                <p><strong>Describe the incident</strong>:
+                    <br />
+                    <textarea name="Description" rows="12" style="width: 95%; font-size: 90%;"></textarea>
+                </p>
+
+                <p><strong>Physical Evidence:</strong>
+                    <br />
+                    <input name="PhysicalEvidence" placeholder= "Mention the type of evidence" style="font-size: 90%;" type="text" required>
+                </p>
+
+                <p><strong>Upload a photo of the incident:</strong>
+                    <br> <br>
+                    <input name="fileUpload" type="file" accept="image/png, image/jpeg, image/jpg" >
+                </p>
+            </div>
+
+
+
+            <p id="message">
+
+            </p>
+            <!-- Move style of button into stylesheet, once the button is nailed down... -->
+            <p style="text-align: center;">
+                <button id="submitButton" name="submitButton" type="submit" >
+                    Submit This Report</button>
+            </p>
+        </div>
+     
+        </div>
+    </form>
+
+</div>
+
+{% comment %} <br>
+<footer class='text-center text-light bg-dark'>
+      All rights reserved.©
+    </footer> {% endcomment %}
+{% endblock body %}
